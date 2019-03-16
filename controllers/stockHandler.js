@@ -16,7 +16,7 @@ function StockHandler() {
       return 'Our standard API call frequency is 5 calls per minute and 500 calls per day.'
     } else {
       if(data) {
-        console.log(data)
+        // console.log(data)
         let stock = data['Global Quote']['01. symbol'],
             price = data['Global Quote']['03. high']
             price = parseFloat(price).toFixed(2);
